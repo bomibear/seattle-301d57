@@ -203,4 +203,4 @@ console.log(joe.scopeArrow());
 // 2. What is "this" when joe.scopeArrow() is invoked?
 // 'this' in joe.scopeArrow() is the Window object
 // 3. Explain why "this" is different when an arrow function is used.
-// Contextual 'this' cannot be used with arrow functions
+// Contextual 'this' cannot be used with arrow functions. 'this' gets moved up to an instance of the Window object instead of any other objects, that could've been defined in the code besides the window object. Prototypes for objects, that is not the window object, need to be written as a regular function.
