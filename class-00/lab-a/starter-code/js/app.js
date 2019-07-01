@@ -35,9 +35,11 @@ function displayPics(){
       viewed.push(rando);
     }
   }
-  console.log(rando);
   // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the letiable declaration from `let to `let`.
   // PUT YOUR RESPONSE IN THIS COMMENT
+  /*
+  The variable rando is scoped to the block within lines 32-36.  Therefore it was not accessible in the line that was deleted before this TODO.
+  */
   console.log(viewed);
 
   for (let i = 0; i < 3; i++){
